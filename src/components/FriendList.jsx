@@ -4,15 +4,15 @@ import { FriendBlock } from './FriendList.styled.jsx';
 
 export const FriendList = ({ items }) => {
   return (
-    <ul>
-      {items.map(item => (
-        <FriendBlock>
+    <FriendBlock>
+      <ul>
+        {items.map(item => (
           <li className="item" key={item.id}>
             <FriendItem item={item} />
           </li>
-        </FriendBlock>
-      ))}
-    </ul>
+        ))}
+      </ul>
+    </FriendBlock>
   );
 };
 

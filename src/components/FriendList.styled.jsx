@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const FriendBlock = styled.div`
-  list-style: none;
+  ul {
+    list-style: none;
+  }
 
   .box {
     display: flex;

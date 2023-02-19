@@ -8,10 +8,7 @@ export const StatisticsList = ({ items }) => {
       <ul>
         {items.map(item => {
           return (
-            <li
-              style={{ padding: 0, backgroundColor: getRandomHexColor() }}
-              key={item.id}
-            >
+            <li style={{ backgroundColor: getRandomHexColor() }} key={item.id}>
               <Statistics item={item} />
             </li>
           );
