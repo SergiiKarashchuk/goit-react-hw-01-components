@@ -1,34 +1,31 @@
 import styled from 'styled-components';
 
 export const ProfileContainer = styled.div`
-display: inline-block;
-width: 240px;
-
+  display: inline-block;
+  width: 240px;
 `;
 
 export const ProfileInfo = styled.div`
-text-align: center;
+  text-align: center;
 
-.name {
+  .name {
     font-weight: 900;
-}
+  }
 `;
 
 export const Stats = styled.div`
+  .stats {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
 
-.stats {
-
-display: flex; 
-width: 100%;
-justify-content: space-between;
-}
-
-.quantity {
+  .quantity {
     font-weight: 900;
-}
+  }
 
-li {
+  li {
     border: 1px solid gray;
     list-style-type: none;
-}
+  }
 `;
