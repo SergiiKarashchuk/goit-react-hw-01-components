@@ -3,17 +3,20 @@ import PropTypes from 'prop-types';
 export const FriendItem = ({ item: { avatar, name, isOnline } }) => {
   return (
     <>
-      <span
-        className="status"
-        style={{
-          backgroundColor: isOnline ? 'green' : 'red',
-          display: 'block',
-          width: 30,
-          height: 30,
-          borderRadius: '50%',
-        }}
-      ></span>
-      <img className="avatar" src={avatar} alt="User avatar" width="48" />
+      <div className="box">
+        <span
+          className="status"
+          style={{
+            backgroundColor: isOnline ? 'green' : 'red',
+            display: 'block',
+            width: 15,
+            height: 15,
+            borderRadius: '50%',
+            alignSelf: 'center',
+          }}
+        ></span>
+        <img className="avatar" src={avatar} alt="User avatar" width="48" />
+      </div>
       <p className="name">{name}</p>
     </>
   );
